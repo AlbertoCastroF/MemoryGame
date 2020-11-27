@@ -152,7 +152,7 @@
   ganoElJuego() {
    swal({
     title: "yay!",
-    text: "Ganaste!",
+    text: "You win!",
     icon: "success"
     })
    .then(this.inicializar)
@@ -160,7 +160,7 @@
 
 
   perdioElJuego() {
-   swal("Nooooo!", "Perdiste! :(", "error")
+   swal("Nooooo!", "You lose! :(", "error")
    .then(() => {
     this.eliminarEventosClick()
     this.inicializar()
